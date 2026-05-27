@@ -39,3 +39,10 @@ Total profit is 4.
 	<li><code>1 &lt;= prices.length &lt;= 3 * 10<sup>4</sup></code></li>
 	<li><code>0 &lt;= prices[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+define total, yesterday, today
+- for itereate starts from 1
+- if yesterday < today
+	- total += today - yesterday
+
