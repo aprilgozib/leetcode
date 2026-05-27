@@ -40,3 +40,21 @@
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+## Approach 1
+use set length to compare
+- set(nums)
+- compare the length
+- if the length are different return True
+- if the length are same return False
+
+## Apporach 2
+use dictionary
+- for i in nums:
+	- seen[i] = seen.get(i, 0) + 1
+- for count in seen.values():
+	- if count > 1:
+   		- return True
+return False
+
+time complexity : O(n), space complexity : O(n)
