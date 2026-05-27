@@ -38,3 +38,12 @@ rotate 2 steps to the right: [3,99,-1,-100]
 	<li>Try to come up with as many solutions as you can. There are at least <strong>three</strong> different ways to solve this problem.</li>
 	<li>Could you do it in-place with <code>O(1)</code> extra space?</li>
 </ul>
+
+## Approach
+using slicing
+for the edge case such as k is bigger then array size -> k = k % len(nums)
+- nums[-k:] -> start at -k and end of the array
+- nums[:-k] -> start at the front and until infornt of the -k
+- nums[:] -> replace whole array
+
+time complexity = O(n), space complexity = O(n)
