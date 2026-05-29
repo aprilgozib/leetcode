@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/aprilgozib/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/aprilgozib/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0136-single-number](https://github.com/aprilgozib/leetcode/tree/master/0136-single-number) |
 | [0189-rotate-array](https://github.com/aprilgozib/leetcode/tree/master/0189-rotate-array) |
 | [0217-contains-duplicate](https://github.com/aprilgozib/leetcode/tree/master/0217-contains-duplicate) |
 ## Two Pointers
@@ -35,4 +36,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/aprilgozib/leetcode/tree/master/0217-contains-duplicate) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0136-single-number](https://github.com/aprilgozib/leetcode/tree/master/0136-single-number) |
 <!---LeetCode Topics End-->
