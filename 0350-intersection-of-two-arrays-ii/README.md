@@ -32,3 +32,29 @@
 	<li>What if <code>nums1</code>&#39;s size is small compared to <code>nums2</code>&#39;s size? Which algorithm is better?</li>
 	<li>What if elements of <code>nums2</code> are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?</li>
 </ul>
+
+## Approach
+use dictionary
+- put numbers in nums1 in dictionary
+- for j in nums2:
+	- if j in seen and seen[j] > 0:
+ 		- res.append(j)
+   		- seen[j] -= 1
+
+## Approach
+use while
+- sort nums1, nums2
+- initialize i, j = 0, 0
+- while i < len(nums1) and j < len(nums2)
+	- if nums1[i] < nums2[j]:
+ 		- i += 1
+    - elif nums1[i] > nums2[j]:
+ 		- j += 1
+    - else:
+      	- res.append(nums1[i])
+ 		- i += 1
+   		- j += 1
+
+time complexity : O(n), space complextiy : O(n)
+
+thinking of using while and it's condition
