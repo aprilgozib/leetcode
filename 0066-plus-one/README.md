@@ -41,3 +41,15 @@ Thus, the result should be [1,0].
 	<li><code>0 &lt;= digits[i] &lt;= 9</code></li>
 	<li><code>digits</code> does not contain any leading <code>0</code>&#39;s.</li>
 </ul>
+
+## Approach
+use list + list
+check from the back
+- for i in range(len(digits) - 1, -1, -1):
+	- if digits[i] < 9:
+ 		- digits[i] += 1
+   		- return digits
+    - digits[i] = 0
+- return [1] + digits
+
+time complexity : O(n), space complextiy : O(n)
