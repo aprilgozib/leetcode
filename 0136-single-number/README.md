@@ -35,3 +35,23 @@
 	<li><code>-3 * 10<sup>4</sup> &lt;= nums[i] &lt;= 3 * 10<sup>4</sup></code></li>
 	<li>Each element in the array appears twice except for one element which appears only once.</li>
 </ul>
+
+## Approach
+Use XOR
+
+| A | B | A ^ B |
+|---|---|-------|
+| 0 | 0 | 0     |
+| 0 | 1 | 1     |
+| 1 | 0 | 1     |
+| 1 | 1 | 0     |
+
+Same numbers cancel out → result becomes 0
+Different number remains
+
+- for i in nums:
+	- res ^= i
+at the result, remain only single number
+
+time complextiy : O(n), space complexity : O(1)
++ for key, value in seen.items() -> to access key, value fair in dictionary
