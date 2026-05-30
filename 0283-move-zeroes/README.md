@@ -20,3 +20,15 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you minimize the total number of operations done?
+
+## Approach
+use while, two pointer
+- len(nums) < 2
+- left, right = 0, 1
+- while right < len(nums)
+	- 0, 0 -> move right
+ 	- 0, 1 -> swap, move both
+  	- 1,0, 1,1 -> move both
+
+time complexity : O(n), space complextiy : O(1)  
+thinking about while condition and if order is matter
