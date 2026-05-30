@@ -17,3 +17,21 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s[i]</code> is a <a href="https://en.wikipedia.org/wiki/ASCII#Printable_characters" target="_blank">printable ascii character</a>.</li>
 </ul>
+
+## Approach
+use slicing s[:]
+- s[:] = s[::-1]
+
+time complexity : O(n), space complexity : O(n)
+
+## Approach
+use two pointer
+- left = 0
+- right = len(s) - 1
+- while left < right:
+ - s[left], s[right] = s[right], s[left]
+ - left += 1
+ - right -= 1
+
+time complexity : O(n), space complexity : O(1)  
+thinking about while condition
