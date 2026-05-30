@@ -39,3 +39,16 @@
 
 <p>&nbsp;</p>
 <strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than <code>O(n<sup>2</sup>)</code><font face="monospace">&nbsp;</font>time complexity?
+
+## Approach
+use dictionary 
+- seen = {}
+- for index, value in enumerate(nums):
+	- diff = target - value
+ 	- if diff not in seen:
+  		- add [value : index]
+    - else:
+    	- return [seen[diff], index] 
+
+time complexity : O(n), space complexity : O(n)  
+enumerate, consider what to put in and what to bring out
