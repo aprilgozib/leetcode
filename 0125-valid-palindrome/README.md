@@ -35,3 +35,20 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 	<li><code>1 &lt;= s.length &lt;= 2 * 10<sup>5</sup></code></li>
 	<li><code>s</code> consists only of printable ASCII characters.</li>
 </ul>
+
+## Approach
+use isalnum(), lower(), two pointer
+- new = []
+- for ch in s:
+	- if ch.isalnum():
+		- new.append(ch.lower())
+- left, right = 0, len(new) - 1
+- while left < right:
+	- if new[left] != new[right]:
+ 		- return False
+   	- left += 1
+   	- right -= 1
+- return True
+
+time complexity : O(n), space complexity : O(n) -> new array  
+thinking about the way to reduce space complexity to O(1)
