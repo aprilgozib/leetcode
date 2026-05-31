@@ -36,3 +36,15 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code> consists of only lowercase English letters.</li>
 </ul>
+
+## Approach
+use dictionary
+- seen = {} # l:1, e:3, t:1 
+- for ch in s:
+	- seen[ch] = seen.get(ch, 0) + 1
+- for index, value in enumerate(s)
+ 	- if seen[value] == 1:
+  		- return index
+- return -1
+
+time complexity : O(n), space complexity : O(n)    
