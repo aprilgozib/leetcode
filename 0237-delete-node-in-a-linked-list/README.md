@@ -47,3 +47,27 @@
 	<li>The value of each node in the list is <strong>unique</strong>.</li>
 	<li>The <code>node</code> to be deleted is <strong>in the list</strong> and is <strong>not a tail</strong> node.</li>
 </ul>
+
+## Approach
+general approach is using prev
+- prev.next = node.next
+
+but this problem we start from the node
+- node.val = node.next.val
+```text
+4 -> 5 -> 1 -> 9
+     ↑
+   node
+```
+```text
+4 -> 1 -> 1 -> 9
+     ↑
+   node
+```
+
+- node.next = node.next.next
+```text
+4 -> 1 -> 9
+```
+
+time complexity : O(1), space complexity : O(1)  
