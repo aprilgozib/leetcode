@@ -30,3 +30,17 @@
 <ul>
 	<li><code>-2<sup>31</sup> &lt;= x &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+
+## Approach
+use %, // to reverse the digit
+- if else for sign
+- res = 0
+- while x < 0:
+	- digit = x % 10 # 나머지
+	- res = res * 10 + digit # 리버스
+	- x //= 10 # 몫
+- res *= sign
+
+time complexity : O(log n) -> number of digits, space complextiy  O(1) -> no array  
+thinking about overflow
