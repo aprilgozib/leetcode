@@ -34,3 +34,24 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you do this in one pass?</p>
+
+## Approach
+use the two-pointer -> fast, slow
+- dummy = ListNode(0)
+- dummy.next = head
+
+fast = n+1 forward slow
+- for i in range(n+1):
+	- fast = fast.next
+
+- while fast:
+	- slow = slow.next
+ 	- fast = fast.next
+
+remove slow.next
+- slow.next = slow.next.next
+
+return dummy.next
+
+time complexity : O(n), space complexity : O(1)  
+using two pointer, focus on fast pointer, while condition, what to remove
