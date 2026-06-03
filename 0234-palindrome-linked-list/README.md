@@ -25,3 +25,29 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you do it in <code>O(n)</code> time and <code>O(1)</code> space?
+
+
+## Approach
+1. find the middle
+2. flip the back part
+3. compare front and back
+- slow, fast = head, head
+- while fast and fast.next:
+	- slow = slow.next # at the middle
+ 	- fast = fast.next.next # at the end
+- prev = None
+- curr = slow
+- while curr:
+	- next_node = curr.next
+ 	- curr.next = prev
+  	- prev = curr
+  	- curr.next = next_node
+- front, back = head, prev
+- while back:
+	- if front.val != back.val:
+ 		- return False
+	- front = front.next
+ 	- back = back.next
+- return True   
+
+time complexity : O(n), space complexity : O(1)
