@@ -32,3 +32,17 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> A linked list can be reversed either iteratively or recursively. Could you implement both?</p>
+
+## Approach
+use prev, curr, next_node
+- prev = None
+- curr = head
+- while curr:
+	- next_node = curr.next # save for later
+ 	- curr.next = prev # flip
+  	- prev = curr # move
+  	- curr = next_node # move
+- return prev
+
+time complexity : O(n), space complexity : O(1)  
+thinking about how to flip, what to save, how to move, what to return 
