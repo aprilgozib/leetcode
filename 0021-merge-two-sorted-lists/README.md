@@ -34,3 +34,25 @@
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 	<li>Both <code>list1</code> and <code>list2</code> are sorted in <strong>non-decreasing</strong> order.</li>
 </ul>
+
+
+## Approach
+use the two-pointer technique
+- dummy = ListNode(0)
+- curr = dummy
+- while list1 and list2:
+	- if list1.val < list2.val:
+ 		- curr.next = list1
+   		- list1 = list1.next
+    - else:
+    	- curr.next = list2
+     	- list2 = list2.next
+ 	- curr = curr.next  
+- if list1: # list1 is left
+	- curr.next = list1
+- if list2 : # list2 is left
+	- curr.next = list2
+- return dummy.next
+
+time complexity : O(n), space comlexity : O(n)  
+how to connect two list, what if one list left, what to return 
