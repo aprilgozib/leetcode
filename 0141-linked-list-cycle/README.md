@@ -40,3 +40,16 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Can you solve it using <code>O(1)</code> (i.e. constant) memory?</p>
+
+## Approach
+use slow, fast
+- slow, fast = head, head
+- while fast and fast.next:
+	- slow = slow.next
+ 	- fast = fast.next.next
+  	- if slow == fast: # there is a circle
+  		- return True 
+- return False
+
+time complexity : O(n), space complexity : O(1)  
+thinking about relation between slow and fast, while condition
