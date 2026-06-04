@@ -24,3 +24,16 @@
 	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+## Approach
+use recursion
+- if not root:
+	- return 0
+- left = self.maxDepth(root.left)
+- right = self.maxDepth(root.right)
+- return max(left, right) + 1
+
+time complexity : O(n), space complexity : O(h)
+thinking about recursion  
+reason why using self. : it's not independent function out of class, it is a method in the class so using self.  
+클래스 밖 -> self. 없음, 클래스 안 -> self. 필요
