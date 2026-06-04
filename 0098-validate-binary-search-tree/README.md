@@ -31,3 +31,16 @@
 	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
 	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+## Approach
+use recursion, def function for min, max
+- def dfs(node, low, high):
+	- if not node:
+ 		- return 0
+    - if node.val <= low or node.val >= high:
+    	- return False
+    - return dfs(node.left, low, node.val) and dfs(node.right, node.val, high)
+ - return dfs(root, float('-inf'), float('inf')) 
+
+time complexity : O(n), space complexity : O(h)  
+thinking about range, left should be bigger than min, right should be smaller than max
