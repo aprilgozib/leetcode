@@ -25,3 +25,18 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it both recursively and iteratively?
+
+## Approach
+use recursion, def is Mirror -> left subtree == right subtree
+- def isMirror(left, right):
+	- if not left and not right: # both empty -> True
+ 		- return True
+    - if not left or not right: # one empty -> False
+    	- return False
+    - if left.val != right.val: # different -> False
+    	- return False
+    - return isMirror(left.left, right.right) and isMirror(left.right, right.left) # what to compare
+- return isMirror(root.left, root.right)
+
+time complexity : O(n), space complexity : O(h)  
+use recursion, thinking about cases -> what to compare
