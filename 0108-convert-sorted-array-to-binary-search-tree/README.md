@@ -26,3 +26,16 @@
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>nums</code> is sorted in a <strong>strictly increasing</strong> order.</li>
 </ul>
+
+## Approach
+use middle as a root
+- if not root:
+	- return None
+- mid = len(nums) // 2
+- root = TreeNode(nums[mid])
+- root.left = self.sortedArrayToBST(nums[:mid])
+- root.right = self.sortedArrayToBST(nums[mid+1:])
+- return root
+
+time complexity : O(n), space complexity : O(n) # slicing  
+consider slicing, root is not included
