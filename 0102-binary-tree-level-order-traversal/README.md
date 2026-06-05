@@ -29,3 +29,20 @@
 	<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
+
+## Approach
+use BFS, recursion
+- res = []
+- def dfs(node, depth):
+	- if not node:
+ 		- return res
+    - if depth == len(res): # first visit 해당 레벨 첫 방문 -> 새 리스트 추가
+    	- res.append([])
+    - res[depth].append(node.val)
+    - dfs(node.left, depth + 1)
+    - dfs(node.right, depth + 1)
+- dfs(root, 0)
+- return res
+
+time complexity : O(n), space complexity : O(h)  
+thinking about first visit, what to append
