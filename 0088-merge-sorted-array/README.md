@@ -46,3 +46,27 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 <p>&nbsp;</p>
 <p><strong>Follow up: </strong>Can you come up with an algorithm that runs in <code>O(m + n)</code> time?</p>
+
+## Approach
+use slicing 
+- nums1[:] = sorted(nums1[:m] + nums2)
+
+time complexity : O(m+n)log(m+n) -> sorted, space complexity : O(m+n) -> +
+
+## Approach
+use the two-pointer -> from the back
+- p1 = m - 1
+- p2 = n - 1
+- p = m + n - 1
+- while p1 >= 0 and p2 >= 0:
+	- if nums1[p1] < nums2[p2]:
+ 		- nums1[p] = nums1[p2]
+   		- p2 -= 1
+    - else:
+    	- nums1[p] = nums2[p2]
+     	- p1 -= 1
+  	- p -= 1
+ - nums1[:p2 + 1] = nums2[:p2 + 1] 
+
+time complexity : O(m+n), space complexity : O(1)  
+thinking about pointers but from the back, what to put
