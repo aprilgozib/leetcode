@@ -30,3 +30,17 @@ Then 4 is the first bad version.
 <ul>
 	<li><code>1 &lt;= bad &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+## Approach
+use binary search
+- left, right = 1, n # there is no 0
+- while left < right:
+	- mid = (left + right) // 2
+ 	- if isBadVersion(mid):
+  		- right = mid
+    - else:
+    	- left = mid + 1
+- return left
+
+time complexity : O(logn), space complexity : O(1)  
+thinking about binary search, range of right, left
