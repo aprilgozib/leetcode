@@ -30,3 +30,17 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 45</code></li>
 </ul>
+
+## Approach
+use fibonachi f(n) = f(n-1) + f(n-2)
+- if n <= 2:
+	- return n
+- prev2, prev1 = 1, 2
+- for i in range(3, n+1)
+	- curr = prev2 + prev1
+ 	- prev2 = prev1
+  	- prev1 = curr
+- return prev1
+
+time complexity : O(n), space complexity : O(1)  
+thinking about fibonachi method, conditions of for, how to update variables, what to return
