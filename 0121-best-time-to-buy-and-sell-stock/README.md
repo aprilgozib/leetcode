@@ -29,3 +29,14 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 	<li><code>1 &lt;= prices.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= prices[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+find the min_price and max_profit
+- min_price = prices[0]
+- max_profit = 0
+- for today in prices:
+	- min_price = min(min_price, today)
+ 	- max_profit = max(max_profit, today - min_price) 
+- return max_profit
+
+time complexity : O(n), space complexity : O(1)  
