@@ -28,3 +28,17 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 400</code></li>
 </ul>
+
+## Approach
+if not continues, it's fine
+- if len(nums) == 1:
+	- return nums[0]
+- prev1, prev2 = 0, 0
+- for num in nums:
+	- curr = max(prev1, prev2 + num)
+ 	- prev2 = prev1
+  	- prev1 = curr
+- return curr # prev
+
+time complexity : O(n), space complexity : O(1)  
+still don't understand 1,0,0,1 case works
