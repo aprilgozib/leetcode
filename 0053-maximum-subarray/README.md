@@ -35,3 +35,15 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> If you have figured out the <code>O(n)</code> solution, try coding another solution using the <strong>divide and conquer</strong> approach, which is more subtle.</p>
+
+## Approach
+if sum is smaller then i, restart
+- curr_sum = nums[0]
+- max_sum = nums[0]
+- for i in nums[1:]:
+	- curr_sum = max(curr_sum + i, i) # if curr_sum + i < i -> restart
+ 	- max_sum = max(curr_sum, max_sum)
+- return max_sum 
+
+time complexity : O(n), space complexity : O(1)  
+if curr_sum + i is smaller then i -> it's better to restart
