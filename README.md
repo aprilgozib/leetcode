@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0155-min-stack](https://github.com/aprilgozib/leetcode/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/aprilgozib/leetcode/tree/master/0234-palindrome-linked-list) |
 ## Tree
 |  |
@@ -162,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0155-min-stack](https://github.com/aprilgozib/leetcode/tree/master/0155-min-stack) |
 | [0384-shuffle-an-array](https://github.com/aprilgozib/leetcode/tree/master/0384-shuffle-an-array) |
 ## Randomized
 |  |
