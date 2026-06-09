@@ -37,3 +37,22 @@ solution.shuffle();    // Returns the random shuffling of array [1,2,3]. Example
 	<li>All the elements of <code>nums</code> are <strong>unique</strong>.</li>
 	<li>At most <code>10<sup>4</sup></code> calls <strong>in total</strong> will be made to <code>reset</code> and <code>shuffle</code>.</li>
 </ul>
+
+## Approach
+use random, [:] copy
+- ### store original array
+- self.original = nums[:]
+- self.nums = nums
+- ### return original array
+- self.nums = self.original[:]
+- return self.nums
+- ### random shuffle
+- ### start at the back, swap random rocation under the current rocation
+- for i in range(len(nums) - 1, 0, -1)
+	- j = random.randint(0, i) # number between 0 ~ i
+ 	- self.nums[i], self.nums[j] = self.nums[j], self.nums[i]
+- return self.nums
+
+time complexity : O(n) -> reset, shuffle , space complexity : O(n) -> store original  
+thinking about how to shuffle, what to store and how to store  
+if self.original = nums -> if nums change, then original change as well
