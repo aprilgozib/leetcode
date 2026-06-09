@@ -42,3 +42,25 @@ minStack.getMin(); // return -2
 	<li>Methods <code>pop</code>, <code>top</code> and <code>getMin</code> operations will always be called on <strong>non-empty</strong> stacks.</li>
 	<li>At most <code>3 * 10<sup>4</sup></code> calls will be made to <code>push</code>, <code>pop</code>, <code>top</code>, and <code>getMin</code>.</li>
 </ul>
+
+## Approach
+use 2 stack for finding min in O(1)
+- self.stack = []
+- self.min_stack = []
+
+- self.stack.append(value)
+- .# compare min and value
+- if not self.min_stack:
+	- self.min_stack.append(value)
+- else:
+	- self.min_stack.append(min(value, min_stack[-1]))
+
+- self.stack.pop()
+- self.min_stack.pop()
+
+- return self.stack[-1]
+
+- return self.min_stack[-1]
+
+time complexity : O(1), space complexity : O(n)  
+using 2 stack to tract min in O(1), thinking about store min and pop
