@@ -29,3 +29,19 @@
 <ul>
 	<li><code>0 &lt;= n &lt;= 5 * 10<sup>6</sup></code></li>
 </ul>
+
+## Approach
+use True False list to check prime
+- if i < 2:
+	- return 0
+- is_prime = True * n # [T, T, T, T, T, ...]
+- is_prime[0] = False
+- is_prime[1] = False # [F, F, T, T, T, ...]
+- for i in range(2, n):
+	- if is_prime: # True
+ 		- for j in range(i*i, n, i): # i의 배수는 이전에 이미 처리 됨
+   			- is_prime[j] = False 
+- return sum(is_prime)
+
+time complexity : O(nloglogn) -> n/2 + n/3 + n/5 ..., space complexity : O(n)  
+using Ture False list, and sliding condition
