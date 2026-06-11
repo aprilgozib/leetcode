@@ -35,3 +35,14 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it without loops/recursion?
+
+## Approach
+use while
+- if n < 1:
+	- return False
+- while n % 2 == 0:
+	- n //= 2
+- return n == 1
+
+time complexity : O(logn), space complexity : O(1)  
+edge case is important because if n = 0, infinite loop
