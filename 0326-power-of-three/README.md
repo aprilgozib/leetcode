@@ -36,3 +36,14 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it without loops/recursion?
+
+## Approach
+use while
+- if n < 1:
+	- return False
+- while n % 3 == 0 # can be devide by 3 나머지가 0이다. = 나눠떨어진다
+	- n //= 3
+- return n == 1 # if power of 3 -> fianl 1
+
+time complexity : O(logn), space complexity : O(1)  
+thinking about while condition, return condition
