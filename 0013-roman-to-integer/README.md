@@ -55,3 +55,18 @@ M             1000</pre>
 	<li><code>s</code> contains only&nbsp;the characters <code>(&#39;I&#39;, &#39;V&#39;, &#39;X&#39;, &#39;L&#39;, &#39;C&#39;, &#39;D&#39;, &#39;M&#39;)</code>.</li>
 	<li>It is <strong>guaranteed</strong>&nbsp;that <code>s</code> is a valid roman numeral in the range <code>[1, 3999]</code>.</li>
 </ul>
+
+## Approach
+use dictionary
+- seen = {I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
+- res = 0
+- .# if s[i] < s[i+1] -> res -= s[i]
+- for i in range(len(s))
+	- if i+1 < len(s) and seen[s[i]] < seen[s[i+1]]:
+		- res -= seen[s[i]]
+ 	- else:
+  		- res += seen[s[i]]
+- return res
+
+time complexity : O(n), space complexity : O(1)  
+thinke about 4, 9 case and i+1 condition
