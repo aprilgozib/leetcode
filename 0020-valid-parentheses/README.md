@@ -56,3 +56,18 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>s</code> consists of parentheses only <code>&#39;()[]{}&#39;</code>.</li>
 </ul>
+
+## Approach
+use dictionary
+- seen = {'(':')', '{':'}', '[':']'}
+- stack = []
+- for ch in s:
+	- if ch in seen: #open
+ 		- stack.append(ch)
+    - else: # close
+    	- if not stack or seen[stack[-1]] != ch # if stack is empty or correspending close bracket is not right
+     		- return False
+- return not stack # at the end stack should be empty
+
+time complexity : O(n), space complexity : O(n)  
+thinking about open and close case conditions
