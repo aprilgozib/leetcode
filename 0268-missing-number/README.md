@@ -67,3 +67,21 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you implement a solution using only <code>O(1)</code> extra space complexity and <code>O(n)</code> runtime complexity?</p>
+
+## Approach
+use total and sum
+- total = len(nums) * (len(nums)) + 1) // 2 # 합의 공식
+- return total - sum(nums) # we can found what's missing
+
+time complexity : O(n), space complexity : O(1)
+
+## Approach
+use brute force to match index
+- nums.sort()
+- for i in range(len(nums)):
+	- if nums[i] != i:
+ 		- return i 
+- return len(nums) # if missing number is at the end
+
+time complexity : O(logn), space complexity : O(1)  
+brute force way can be pass, but there is smarter way
