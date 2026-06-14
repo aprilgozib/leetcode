@@ -5,3 +5,6 @@ class Solution:
             if nums[i] != i:
                 return i
         return len(nums)
+
+        # total - sum
+        # return len(nums) * (len(nums) + 1) // 2 - sum(nums)
