@@ -37,3 +37,18 @@ Finally delete &quot;ddd&quot;, get &quot;aa&quot;</pre>
 	<li><code>2 &lt;= k &lt;= 10<sup>4</sup></code></li>
 	<li><code>s</code> only contains lowercase English letters.</li>
 </ul>
+
+## Approach
+use stack form in [ch, count]
+- stack = []
+- for ch in s:
+	- if stack and stack[-1][0] == ch:
+ 		- stack[-1][1] += 1
+    - else:
+    	- stack.append([ch, 1])
+	- if stack[-1][1] == k:
+ 		- stack.pop()
+ - return ''.join(ch * count for ch, count in stack)
+
+time complexity : O(n), space complexity : O(n)  
+remember that you can make multidimension stack, array
