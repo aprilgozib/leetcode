@@ -30,3 +30,19 @@
 	<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= height[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+use two pointer l, r and move the short one
+- l, r = 0, len(height) - 1
+- max_water = 0
+- while l < r:
+	- water = min(height[l], height[r]) * (r - l)
+ 	- max_water = max(max_water, water)
+  	- if height[l] < height[r]:
+  		- l += 1
+  	- else:
+  		- r -= 1
+- return max_water
+
+time complexity : O(n), space complexity : O(1)  
+thinking about using pointer, how to move it, how to find max_water
