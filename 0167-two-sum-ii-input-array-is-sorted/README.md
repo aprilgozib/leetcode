@@ -41,3 +41,16 @@
 	<li><code>-1000 &lt;= target &lt;= 1000</code></li>
 	<li>The tests are generated such that there is <strong>exactly one solution</strong>.</li>
 </ul>
+
+## Approach
+use dictionary
+- seen = {}
+- for i in range(len(numbers)):
+	- diff = target - numbers[i]
+ 	- if diff not in seen:
+  		- seen[numbers[i]] = i + 1 # {2:1, 
+	- else:
+ 		- return [seen[diff], i + 1] 
+
+time complexity : O(n), space complexity : O(n)  
+what is the difference between two sum question
