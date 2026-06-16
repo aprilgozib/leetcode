@@ -33,3 +33,18 @@ Notice that the answer must be a substring, &quot;pwke&quot; is a subsequence an
 	<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>
 	<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>
 </ul>
+
+## Approach
+use the two-pointer left, right -> moving right, but duplicate then moving left
+- left = 0
+- seen = {}
+- res = 0
+- for right, ch in enumerate(s):
+	- if ch in seen and seen[ch] >= left:
+ 		- left = seen[ch] + 1 # moving left
+	- seen[ch] = right
+	- res = max(res, right - left + 1)
+- return res
+
+time complexity : O(n), space complexity : O(n)  
+using two pointer because of the substring and think about duplicate condition
