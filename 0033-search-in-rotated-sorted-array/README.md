@@ -27,3 +27,25 @@
 	<li><code>nums</code> is an ascending array that is possibly rotated.</li>
 	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+use the two-pointer technique, focus on sorted part
+- left, right = 0, len(nums) - 1
+- while left <= right # even if one element left -> check
+	- mid = (left + right) // 2
+ 	- if nums[mid] == target:
+  		- return mid
+ 	- elif nums[left] <= nums[mid]: # left sorted, handle left == mid 
+  		- if nums[left] <= target < nums[mid]: # at left part, handle nums[left] == target
+    		- right = mid - 1
+        - else: # at right part
+        	- left = mid + 1 
+  	- else : # right sorted
+  		- if nums[mid] < target <= nums[right]: # at right part,
+  	 		- left = mid + 1
+  	   	- else:
+  	   		- right = mid - 1
+- return -1
+
+time complexity : O(logn), space complexity : O(1)  
+thinking about which part is sorted and how to divide cases, <= or < decision is also important
