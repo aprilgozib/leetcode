@@ -33,3 +33,21 @@
 	<li><code>1 &lt;= m, n &lt;= 100</code></li>
 	<li><code>-10<sup>4</sup> &lt;= matrix[i][j], target &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+use binary search, 1d -> 2d
+- m, n = len(matrix), len(matrix[0])
+- left, right = 0, m * n - 1
+- while left <= right:
+	- mid = (left + right) // 2
+ 	- val = matrix[mid // n][mid & n]
+    - if val == target:
+    	- return True
+    - elif val < target:
+    	- left = mid + 1
+    - else:
+    	- right = mid - 1
+- return False
+
+time complexity : O(log m * n), space complexity : O(1)  
+think about while condition, 1d -> 2d val [mid // n][mid % n]
