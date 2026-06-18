@@ -46,3 +46,17 @@
 	<li>All the integers of <code>nums</code> are <strong>unique</strong>.</li>
 	<li><code>nums</code> is sorted and rotated between <code>1</code> and <code>n</code> times.</li>
 </ul>
+
+## Approach
+use binary search, compare mid and right
+- left, right = 0, len(nums) - 1
+- while left < right: # left = right -> loop end
+	- mid = (left + right) // 2
+	- if nums[mid] > nums[right]: # minimum is on the right
+ 		- left = mid + 1
+ 	- else: # minimum is on the left
+  		- right = mid # include mid
+- return nums[left] # left = right
+
+time complexity : O(logn), space complexity : O(1)  
+choose right criteria is important, think about while condition and left, right include condition 
