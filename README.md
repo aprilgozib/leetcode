@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/aprilgozib/leetcode/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/aprilgozib/leetcode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/aprilgozib/leetcode/tree/master/0283-move-zeroes) |
+| [0349-intersection-of-two-arrays](https://github.com/aprilgozib/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/aprilgozib/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0384-shuffle-an-array](https://github.com/aprilgozib/leetcode/tree/master/0384-shuffle-an-array) |
 | [0704-binary-search](https://github.com/aprilgozib/leetcode/tree/master/0704-binary-search) |
@@ -45,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/aprilgozib/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0283-move-zeroes](https://github.com/aprilgozib/leetcode/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/aprilgozib/leetcode/tree/master/0344-reverse-string) |
+| [0349-intersection-of-two-arrays](https://github.com/aprilgozib/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/aprilgozib/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Dynamic Programming
 |  |
@@ -83,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/aprilgozib/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/aprilgozib/leetcode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/aprilgozib/leetcode/tree/master/0268-missing-number) |
+| [0349-intersection-of-two-arrays](https://github.com/aprilgozib/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/aprilgozib/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0387-first-unique-character-in-a-string](https://github.com/aprilgozib/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 ## Sorting
@@ -93,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/aprilgozib/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/aprilgozib/leetcode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/aprilgozib/leetcode/tree/master/0268-missing-number) |
+| [0349-intersection-of-two-arrays](https://github.com/aprilgozib/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/aprilgozib/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Bit Manipulation
 |  |
@@ -109,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/aprilgozib/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0268-missing-number](https://github.com/aprilgozib/leetcode/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/aprilgozib/leetcode/tree/master/0278-first-bad-version) |
+| [0349-intersection-of-two-arrays](https://github.com/aprilgozib/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/aprilgozib/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0704-binary-search](https://github.com/aprilgozib/leetcode/tree/master/0704-binary-search) |
 ## String
