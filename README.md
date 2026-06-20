@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0283-move-zeroes](https://github.com/aprilgozib/leetcode/tree/master/0283-move-zeroes) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/aprilgozib/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0384-shuffle-an-array](https://github.com/aprilgozib/leetcode/tree/master/0384-shuffle-an-array) |
+| [0704-binary-search](https://github.com/aprilgozib/leetcode/tree/master/0704-binary-search) |
 ## Two Pointers
 |  |
 | ------- |
@@ -109,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/aprilgozib/leetcode/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/aprilgozib/leetcode/tree/master/0278-first-bad-version) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/aprilgozib/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0704-binary-search](https://github.com/aprilgozib/leetcode/tree/master/0704-binary-search) |
 ## String
 |  |
 | ------- |
