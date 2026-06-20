@@ -30,3 +30,19 @@
 	<li><code>1 &lt;= Node.val &lt;= 50</code></li>
 	<li><code>0 &lt;= val &lt;= 50</code></li>
 </ul>
+
+## Approach
+use dummy, prev, curr to remove val
+- dummy = ListNode(0, head)
+- prev = dummy
+- curr = head
+- while curr:
+	- if curr.val == val:
+ 		- prev.next = curr.next
+   	- else:
+   		- prev = curr
+   	- curr = curr.next
+- return dummy.next
+
+time complexity : O(n), space complexity : O(1)  
+study more about linked list
