@@ -23,3 +23,34 @@
 	<li><code>1 &lt;= nums1.length, nums2.length &lt;= 1000</code></li>
 	<li><code>0 &lt;= nums1[i], nums2[i] &lt;= 1000</code></li>
 </ul>
+
+## Approach
+use sort, two pointers, consider duplicate
+- nums1.sort()
+- nums2.sort()
+- i, j = 0,0
+- res = []
+- while i < len(nums1) & j < len(nums2):
+	- if nums1[i] == nums2[j]:
+ 		- res.append(nums1[i])
+   		- i += 1
+     	- j += 1
+      	- while i < len(nums1) & nums1[i] == nums1[i-1]: # manage duplicate
+      		- i += 1
+      	- while j < len(nums2) & nums2[j] == nums2[j-1]:
+      		- j += 1
+    - elif nums1[i] < nums2[j]:
+    	- i += 1
+    - else:
+    	- j += 1
+- return res
+
+time complexity : O(nlogn), space complexity : O(1)  
+thinking about handling duplicate like [2,2]
+
+## Approach
+use set
+- return list(set(nums1) & set(nums2))
+
+time complexity : O(n), space complexity : O(n)  
+using set -> no need sort, using & to find intersection 
