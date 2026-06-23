@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/aprilgozib/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/aprilgozib/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0384-shuffle-an-array](https://github.com/aprilgozib/leetcode/tree/master/0384-shuffle-an-array) |
+| [0414-third-maximum-number](https://github.com/aprilgozib/leetcode/tree/master/0414-third-maximum-number) |
 | [0704-binary-search](https://github.com/aprilgozib/leetcode/tree/master/0704-binary-search) |
 ## Two Pointers
 |  |
@@ -102,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/aprilgozib/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/aprilgozib/leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0389-find-the-difference](https://github.com/aprilgozib/leetcode/tree/master/0389-find-the-difference) |
+| [0414-third-maximum-number](https://github.com/aprilgozib/leetcode/tree/master/0414-third-maximum-number) |
 ## Bit Manipulation
 |  |
 | ------- |
