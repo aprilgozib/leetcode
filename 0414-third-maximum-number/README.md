@@ -44,3 +44,26 @@ The third distinct maximum is 1.
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Can you find an <code>O(n)</code> solution?
+
+## Approach
+use float('-inf')
+- f_max, s_max, t_max = float('-inf'), float('-inf'), float('-inf')
+- for i in nums:
+	- if i == f_max or i == s_max or i == t_max: #skip duplicate
+ 		- continue
+	- if i > f_max:
+ 		- t_max = s_max
+   		- s_max = f_max
+     	- f_max = i
+   - elif i > s_max:
+   		- t_max = s_max
+     	- s_max = i
+   - elif:
+   		- t_max = i
+ - if t_max != float('-inf'):
+ 	- return t_max
+ - else:
+ 	- return f_max
+
+time complexity : O(n), space complexity : O(1)  
+remember float('inf') format, thinking about handle duplicate, return maximum is different 
