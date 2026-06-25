@@ -1,21 +1,20 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        # using two pointer, focus on sorted part
+        # use two pointer, binary search
+        # focus on the sorted part
         left, right = 0, len(nums) - 1
         while left <= right:
             mid = (left + right) // 2
             if nums[mid] == target:
                 return mid
-            if nums[left] <= nums[mid]: # left sorted
-                if nums[left] <= target < nums[mid]: # target at left
+            elif nums[left] <= nums[mid]: # left sorted
+                if nums[left] <= target <= nums[mid]: # left part
                     right = mid - 1
-                else: # target at right
+                else: # right part
                     left = mid + 1
             else: # right sorted
-                if nums[mid] < target <= nums[right]: # target at right
+                if nums[mid] <= target <= nums[right]: # right part
                     left = mid + 1
-                else: # target at left
+                else: # left part
                     right = mid - 1
-        return -1
-
         return -1
