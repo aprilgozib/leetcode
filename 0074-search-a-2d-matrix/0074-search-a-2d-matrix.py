@@ -1,12 +1,15 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        m, n = len(matrix), len(matrix[0])
-        left, right = 0, m * n - 1
+        # using m, n 2d -> 1d
+        # binary search
+        m = len(matrix) # row
+        n = len(matrix[0]) # col
+        left = 0 
+        right = m * n - 1 # total
 
         while left <= right:
             mid = (left + right) // 2
             val = matrix[mid // n][mid % n]
-
             if val == target:
                 return True
             elif val < target:
