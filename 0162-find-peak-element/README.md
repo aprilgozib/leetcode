@@ -29,3 +29,19 @@
 	<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>
 	<li><code>nums[i] != nums[i + 1]</code> for all valid <code>i</code>.</li>
 </ul>
+
+## Approach
+use binary search
+if nums[mid] < nums[mid+1] -> feak is at the right
+if nums[mid] > nums[mid+1] -> feak is at the left
+- left, right = 0, len(nums) - 1
+- while left < right:
+	- mid = (left + right) // 2
+ 	- if nums[mid] < nums[mid + 1]:
+  		- left = mid + 1
+    - else:
+    	- right = mid
+- return left 
+
+time complexity : O(log n), space complexity: O(n)  
+thinking where the peak is
