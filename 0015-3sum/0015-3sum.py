@@ -1,18 +1,15 @@
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
-        # sort, fix one and use two pointer
+        # sort
         nums.sort()
         res = []
-
+        # fix one and use two pointer
         for i in range(len(nums) - 2):
             if i > 0 and nums[i] == nums[i-1]: # duplicate skip
                 continue
-
-            left, right = i+1, len(nums) - 1
-
+            left, right = i + 1, len(nums) - 1
             while left < right:
                 total = nums[i] + nums[left] + nums[right]
-
                 if total == 0:
                     res.append([nums[i], nums[left], nums[right]])
                     while left < right and nums[left] == nums[left + 1]:
@@ -23,6 +20,6 @@ class Solution:
                     right -= 1
                 elif total < 0:
                     left += 1
-                else: # total > 0
+                else: # total > 0:
                     right -= 1
         return res
