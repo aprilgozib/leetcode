@@ -6,7 +6,6 @@
 #         self.right = right
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
-        # choose middle value to root
         if not nums:
             return None
 
