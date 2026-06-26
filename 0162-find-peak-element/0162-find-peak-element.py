@@ -1,12 +1,12 @@
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
-        # criteria is mid 
-        # move to bigger side
-        left, right = 0, len(nums)-1
+        # binary search
+        left = 0
+        right = len(nums) - 1
         while left < right:
             mid = (left + right) // 2
-            if nums[mid] < nums[mid+1]:
+            if nums[mid] < nums[mid + 1]: # peak is on the right
                 left = mid + 1
-            else:
+            else: # peak is on the left
                 right = mid
         return left
