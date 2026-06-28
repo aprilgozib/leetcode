@@ -1,9 +1,8 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        # using binary search
-        left = 0
-        right = len(nums) - 1
-        while left <= right: # check single one
+        # use binary search
+        left, right = 0, len(nums) - 1
+        while left <= right:
             mid = (left + right) // 2
             if nums[mid] == target:
                 return mid
