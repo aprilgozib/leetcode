@@ -10,8 +10,7 @@ class Solution:
         dummy.next = head
         slow, fast = dummy, dummy
 
-        # fast : n + 1
-        for i in range(n+1):
+        for i in range(n + 1):
             fast = fast.next
         
         while fast:
