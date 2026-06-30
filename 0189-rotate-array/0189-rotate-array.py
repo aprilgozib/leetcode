@@ -4,5 +4,6 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         # slicing
+        # if k is bigger then len(nums)
         k = k % len(nums)
         nums[:] = nums[-k:] + nums[:-k]
