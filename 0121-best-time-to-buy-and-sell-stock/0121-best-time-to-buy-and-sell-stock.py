@@ -1,6 +1,6 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        # max_profit = toady - min_price
+        # find min price, max profit
         min_price = float('inf')
         max_profit = 0
         for today in prices:
