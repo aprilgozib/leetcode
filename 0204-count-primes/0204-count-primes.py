@@ -1,6 +1,7 @@
 class Solution:
     def countPrimes(self, n: int) -> int:
-        # F, T list checking
+        # F, T mark
+        # i*i, n, i # 배수
         if n < 2:
             return 0
 
@@ -9,8 +10,7 @@ class Solution:
         is_prime[1] = False
 
         for i in range(2, n):
-            if is_prime[i]:
+            if is_prime:
                 for j in range(i*i, n, i):
                     is_prime[j] = False
         return sum(is_prime)
-        
