@@ -2,7 +2,7 @@ class Solution:
     def isPowerOfThree(self, n: int) -> bool:
         if n < 1:
             return False
-        while n % 3 == 0: # can be devide by 3 
-            n //= 3
         
+        while n % 3 == 0: # if possible to divide
+            n //= 3
         return n == 1
