@@ -1,18 +1,17 @@
 class Solution:
 
     def __init__(self, nums: List[int]):
-        # store og 
-        self.original = nums[:]
+        self.og = nums[:]
         self.nums = nums
 
     def reset(self) -> List[int]:
         # return og
-        self.nums = self.original[:]
+        self.nums = self.og[:]
         return self.nums
 
     def shuffle(self) -> List[int]:
         # randon shuffle
-        # start at the back, swap with random rocation under curr
+        # back to front
         for i in range(len(self.nums) - 1, 0, -1):
             j = random.randint(0, i)
             self.nums[i], self.nums[j] = self.nums[j], self.nums[i]
