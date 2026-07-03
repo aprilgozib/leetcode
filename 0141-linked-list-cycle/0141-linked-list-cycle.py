@@ -6,7 +6,7 @@
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        # use slow, fast two pointers
+        # slow, fast two pointers
         slow, fast = head, head
         while fast and fast.next:
             slow = slow.next
