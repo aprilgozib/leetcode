@@ -1,12 +1,10 @@
 class Solution:
     def firstUniqChar(self, s: str) -> int:
-        # use dictionary
-        seen = {} # l:1, e:3, t:1
+        seen = {}
         for ch in s:
             seen[ch] = seen.get(ch, 0) + 1
-        
-        for index, value in enumerate(s):
-            if seen[value] == 1:
-                return index
-        
+        for i in range(len(s)):
+            if seen[s[i]] < 2:
+                return i
         return -1
+        
