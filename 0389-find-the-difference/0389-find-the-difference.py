@@ -4,8 +4,6 @@ class Solution:
         for ch in s:
             seen[ch] = seen.get(ch, 0) + 1
         for ch in t:
-            #if ch not in seen:
-            if ch in seen and seen[ch] > 0:
-                seen[ch] -= 1
-            else:
+            if ch not in seen or seen[ch] < 1:
                 return ch
+            seen[ch] -= 1
