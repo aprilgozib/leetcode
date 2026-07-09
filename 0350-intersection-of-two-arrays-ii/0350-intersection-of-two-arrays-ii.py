@@ -1,10 +1,10 @@
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        # use two pointer
         nums1.sort()
         nums2.sort()
-        i, j = 0, 0
         res = []
-
+        i,j = 0, 0
         while i < len(nums1) and j < len(nums2):
             if nums1[i] == nums2[j]:
                 res.append(nums1[i])
