@@ -1,5 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        # use stack, dictionary
         seen = {'(':')', '{':'}', '[':']'}
         stack = []
         for ch in s:
