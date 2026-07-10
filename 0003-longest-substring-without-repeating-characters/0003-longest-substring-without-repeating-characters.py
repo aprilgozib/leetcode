@@ -1,7 +1,7 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         # use two pointer
-        # use dictionary, enumerate
+        # use dictionary
         left = 0
         seen = {}
         res = 0
