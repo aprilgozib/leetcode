@@ -5,15 +5,14 @@
 #         self.next = next
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
-        # use two pointer slow, fast
+        # slow, fast
         slow = head
         fast = head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-        
-        # from the middle
-        # flip the back 1,2,1,2
+
+        # flip
         prev = None
         curr = slow
         while curr:
@@ -21,8 +20,8 @@ class Solution:
             curr.next = prev
             prev = curr
             curr = next_node
-        
-        # compare front and back
+
+        #compare front and back
         front = head
         back = prev
         while back:
@@ -31,4 +30,3 @@ class Solution:
             front = front.next
             back = back.next
         return True
-
