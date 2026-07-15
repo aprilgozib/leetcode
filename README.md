@@ -138,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/aprilgozib/leetcode/tree/master/0344-reverse-string) |
 | [0387-first-unique-character-in-a-string](https://github.com/aprilgozib/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/aprilgozib/leetcode/tree/master/0389-find-the-difference) |
+| [0394-decode-string](https://github.com/aprilgozib/leetcode/tree/master/0394-decode-string) |
 | [0409-longest-palindrome](https://github.com/aprilgozib/leetcode/tree/master/0409-longest-palindrome) |
 | [0412-fizz-buzz](https://github.com/aprilgozib/leetcode/tree/master/0412-fizz-buzz) |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/aprilgozib/leetcode/tree/master/1209-remove-all-adjacent-duplicates-in-string-ii) |
@@ -169,6 +170,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/aprilgozib/leetcode/tree/master/0231-power-of-two) |
 | [0234-palindrome-linked-list](https://github.com/aprilgozib/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0326-power-of-three](https://github.com/aprilgozib/leetcode/tree/master/0326-power-of-three) |
+| [0394-decode-string](https://github.com/aprilgozib/leetcode/tree/master/0394-decode-string) |
 | [0509-fibonacci-number](https://github.com/aprilgozib/leetcode/tree/master/0509-fibonacci-number) |
 ## Stack
 |  |
@@ -177,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/aprilgozib/leetcode/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/aprilgozib/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/aprilgozib/leetcode/tree/master/0234-palindrome-linked-list) |
+| [0394-decode-string](https://github.com/aprilgozib/leetcode/tree/master/0394-decode-string) |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/aprilgozib/leetcode/tree/master/1209-remove-all-adjacent-duplicates-in-string-ii) |
 ## Tree
 |  |
