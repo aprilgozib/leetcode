@@ -267,4 +267,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0933-number-of-recent-calls](https://github.com/aprilgozib/leetcode/tree/master/0933-number-of-recent-calls) |
+## Database
+|  |
+| ------- |
+| [0595-big-countries](https://github.com/aprilgozib/leetcode/tree/master/0595-big-countries) |
 <!---LeetCode Topics End-->
