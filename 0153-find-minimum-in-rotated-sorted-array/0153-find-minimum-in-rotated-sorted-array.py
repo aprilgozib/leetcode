@@ -1,12 +1,10 @@
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        # binary search
-        # left, right sorted part
         left, right = 0, len(nums) - 1
         while left < right:
             mid = (left + right) // 2
-            if nums[mid] > nums[right]: # minimum is on the right:
+            if nums[mid] > nums[right]: # minimum on the right
                 left = mid + 1
-            else: # minimum is on the left
+            else:
                 right = mid
         return nums[left]
