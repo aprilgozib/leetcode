@@ -1,8 +1,8 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        seen = {}
-        for ch in nums:
-            seen[ch] = seen.get(ch, 0) + 1
-        for key, value in seen.items():
-            if value == 1:
-                return key
+        seen = {} #{2:2, 1:1}
+        for num in nums:
+            seen[num] = seen.get(num, 0) + 1
+        for value, count in seen.items():
+            if count == 1:
+                return value
