@@ -1,6 +1,6 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
-        # use prev2, prev1 -> prev1 compare prev2 + num
+        # use prev2, prev1 -> prev1 compare prev2 + curr
         if len(nums) == 1:
             return nums[0]
 
