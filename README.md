@@ -273,4 +273,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0183-customers-who-never-order](https://github.com/aprilgozib/leetcode/tree/master/0183-customers-who-never-order) |
 | [0595-big-countries](https://github.com/aprilgozib/leetcode/tree/master/0595-big-countries) |
 | [1757-recyclable-and-low-fat-products](https://github.com/aprilgozib/leetcode/tree/master/1757-recyclable-and-low-fat-products) |
+## Primality Test
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/aprilgozib/leetcode/tree/master/0204-count-primes) |
+## Sieve Theory
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/aprilgozib/leetcode/tree/master/0204-count-primes) |
+## Prime Number Sieve
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/aprilgozib/leetcode/tree/master/0204-count-primes) |
 <!---LeetCode Topics End-->
