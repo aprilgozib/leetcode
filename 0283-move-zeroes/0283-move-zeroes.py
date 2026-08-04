@@ -5,7 +5,7 @@ class Solution:
         """
         if len(nums) < 1:
             return nums
-        # two pointers
+
         left, right = 0, 1
         while right < len(nums):
             if nums[left] == 0:
@@ -13,8 +13,9 @@ class Solution:
                     nums[left], nums[right] = nums[right], nums[left]
                     left += 1
                     right += 1
-                else: # nums[right] == 0:
+                else: # nums[right] == 0
                     right += 1
             else: # nums[left] != 0
                 left += 1
                 right += 1
+        
