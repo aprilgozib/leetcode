@@ -1,17 +1,13 @@
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        # use two pointer
-        nums1.sort()
-        nums2.sort()
+        seen = {}
+        for i in nums1:
+            seen[i] = seen.get(i, 0) + 1
+
         res = []
-        i,j = 0, 0
-        while i < len(nums1) and j < len(nums2):
-            if nums1[i] == nums2[j]:
-                res.append(nums1[i])
-                i += 1
-                j += 1
-            elif nums1[i] < nums2[j]:
-                i += 1
-            else:
-                j += 1
+        for i in nums2:
+            if i in seen and seen[i] > 0:
+                res.append(i)
+                seen[i] -= 1
+
         return res
