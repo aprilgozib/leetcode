@@ -1,22 +1,16 @@
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        # use two pointer, binary search
-        nums1.sort()
-        nums2.sort()
-        i, j = 0, 0
-        res = []
-        while i < len(nums1) and j < len(nums2):
-            if nums1[i] == nums2[j]:
-                res.append(nums1[i])
-                i += 1
-                j += 1
-                while i < len(nums1) and nums1[i] == nums1[i - 1]:
-                    i += 1
-                while j < len(nums2) and nums2[j] == nums2[j - 1]:
-                    j += 1
-                
-            elif nums1[i] < nums2[j]:
-                i += 1
+        seen = {} # 1:1, 2:1
+        for i in nums1:
+            if i not in seen:
+                seen[i] = 1
             else:
-                j += 1
+                continue
+
+        res = []
+        for i in nums2:
+            if i in seen and seen[i] > 0:
+                res.append(i)
+                seen[i] -= 1
+
         return res
