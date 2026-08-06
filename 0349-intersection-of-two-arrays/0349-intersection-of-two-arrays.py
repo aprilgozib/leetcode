@@ -1,16 +1,15 @@
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        seen = {} # 1:1, 2:1
-        for i in nums1:
-            if i not in seen:
-                seen[i] = 1
-            else:
-                continue
-
+        seen = {}
+        for num in nums1:
+            if num not in seen:
+                seen[num] = 1
+        # seen = {1:1, 2:1}
         res = []
-        for i in nums2:
-            if i in seen and seen[i] > 0:
-                res.append(i)
-                seen[i] -= 1
+        for num in nums2:
+            if num in seen and seen[num] > 0:
+                res.append(num)
+                seen[num] -= 1
 
         return res
+        
