@@ -3,9 +3,9 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        if len(nums) < 1:
+        if len(nums) < 2:
             return nums
-
+        
         left, right = 0, 1
         while right < len(nums):
             if nums[left] == 0:
@@ -18,4 +18,3 @@ class Solution:
             else: # nums[left] != 0
                 left += 1
                 right += 1
-        
