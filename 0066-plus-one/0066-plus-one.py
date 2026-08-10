@@ -6,4 +6,5 @@ class Solution:
                 return digits
             else:
                 digits[i] = 0
+
         return [1] + digits
