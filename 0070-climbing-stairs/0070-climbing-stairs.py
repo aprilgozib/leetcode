@@ -1,20 +1,13 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
-        # fibonachi
-        # 1 -> 1
-        # 2 -> 1+1, 2
-        # 3 -> 1+1+1, 1+2, 2+1
-        # 4 -> 1+1+1+1, 1+1+2, 1+2+1, 2+1+1, 2+2
-        # f(n) = f(n-2) + f(n-1)
-
+        # f(n) = f(n-1) + f(n-2)
         if n <= 2:
             return n
 
         prev2, prev1 = 1, 2
-        for i in range(3, n+1):
+        for i in range(3, n + 1):
             curr = prev2 + prev1
             prev2 = prev1
             prev1 = curr
-    
+
         return curr
-        
