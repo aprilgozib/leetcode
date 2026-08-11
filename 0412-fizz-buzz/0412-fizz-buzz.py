@@ -10,5 +10,4 @@ class Solution:
                 res.append('Fizz')
             else:
                 res.append(str(i))
-
         return res
