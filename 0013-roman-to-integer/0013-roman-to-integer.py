@@ -9,4 +9,3 @@ class Solution:
                 res += seen[s[i]]
         res += seen[s[-1]]
         return res
-            
