@@ -5,9 +5,6 @@ class Solution:
         t_max = float('-inf')
 
         for num in nums:
-            if num == f_max or num == s_max or num == t_max:
-                continue
-
             if num > f_max:
                 t_max = s_max
                 s_max = f_max
@@ -17,7 +14,6 @@ class Solution:
                 s_max = num
             elif num < s_max and num > t_max:
                 t_max = num
-
         if t_max == float('-inf'):
             return f_max
         else:
