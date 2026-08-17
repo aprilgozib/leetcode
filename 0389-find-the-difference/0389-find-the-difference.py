@@ -5,6 +5,8 @@ class Solution:
             seen[ch] = seen.get(ch, 0) + 1
 
         for ch in t:
-            if ch not in seen or seen[ch] == 0:
+            if ch not in seen or seen[ch] < 1:
                 return ch
             seen[ch] -= 1
+
+        
