@@ -3,12 +3,12 @@ class Solution:
         seen = {'(':')', '{':'}', '[':']'}
         stack = []
         for ch in s:
-            if ch in seen: # open
+            if ch in seen:
                 stack.append(ch)
-            elif ch in seen.values(): # close
+            elif ch in seen.values():
                 if not stack:
                     return False
-                elif ch == seen[stack[-1]]: # match
+                elif ch == seen[stack[-1]]:
                     stack.pop()
                 else:
                     return False
