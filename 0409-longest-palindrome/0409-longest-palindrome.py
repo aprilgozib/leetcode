@@ -3,9 +3,10 @@ class Solution:
         seen = {}
         for ch in s:
             seen[ch] = seen.get(ch, 0) + 1
-        
+
         res = 0
         is_odd = False
+
         for count in seen.values():
             res += count // 2 * 2
             if count % 2 == 1:
