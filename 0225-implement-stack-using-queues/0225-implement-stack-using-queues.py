@@ -10,13 +10,13 @@ class MyStack:
 
     def pop(self) -> int:
         return self.stack.popleft()
+        
 
     def top(self) -> int:
         return self.stack[0]
 
     def empty(self) -> bool:
         return not self.stack
-        
 
 
 # Your MyStack object will be instantiated and called as such:
