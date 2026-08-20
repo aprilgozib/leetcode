@@ -7,7 +7,7 @@ class RecentCounter:
         self.q1.append(t)
         while self.q1[0] < t - 3000:
             self.q1.popleft()
-        return len(self.q1)
+        return len(self.q1) 
 
 
 # Your RecentCounter object will be instantiated and called as such:
