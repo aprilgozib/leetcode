@@ -6,10 +6,17 @@ class Solution:
         seen = {}
         for ch in s:
             seen[ch] = seen.get(ch, 0) + 1
-
+        
         for ch in t:
-            if ch not in seen or seen[ch] < 1:
+            if ch in seen:
+                seen[ch] -= 1
+            else: # ch not in seen
                 return False
-            seen[ch] -= 1
+        
+        for count in seen.values():
+            if count != 0: # count should be zero
+                return False
 
         return True
+
+        
