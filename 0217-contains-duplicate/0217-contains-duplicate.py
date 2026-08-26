@@ -7,4 +7,5 @@ class Solution:
         for count in seen.values():
             if count > 1:
                 return True
+
         return False
